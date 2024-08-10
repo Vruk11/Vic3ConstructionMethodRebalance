@@ -1,0 +1,39 @@
+pm_concrete_buildings = {
+	texture = "gfx/interface/icons/invention_icons/reinforced_concrete.dds"
+
+	unlocking_technologies = {
+		concrete_construction
+	}
+
+	#Currently just does the same as steel construction
+	country_modifiers = {
+		workforce_scaled = {
+			country_construction_add = 10
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_steel_add = 50
+			goods_input_glass_add = 40
+			goods_input_explosives_add = 10
+			goods_input_tools_add = 20
+		}
+
+		level_scaled = {
+			building_employment_bureaucrats_add = 500
+			building_employment_clerks_add = 500
+			building_employment_machinists_add = 750
+			building_employment_laborers_add = 3250
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_construction_mult = 0.007
+		}	
+	}
+}
